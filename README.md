@@ -21,3 +21,26 @@ class Main {
     }
 }
 ```
+##### Exercise 30:
+
+```java
+import java.util.Scanner;
+import java.lang.Math;
+class Main {
+    public static void main(String[] args) {
+        boolean first, second;
+        int firstAge, secondAge;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        first = Character.compare(scanner.next().charAt(0), 'm') == 0 ? true : false;
+        second = Character.compare(scanner.next().charAt(0), 'm') == 0 ?  true : false;
+        
+        firstAge = scanner.nextInt();
+        secondAge = scanner.nextInt();
+    
+        if (first ^ second && Math.abs(firstAge - secondAge) <= 5) System.out.println("The match is accepted");
+        else System.out.println("The math is unacceptable");
+    }
+}
+```
