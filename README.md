@@ -44,3 +44,23 @@ class Main {
     }
 }
 ```
+##### Exercise 31:
+
+```java
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        double first, second, third;
+        Scanner scanner = new Scanner(System.in);
+        
+        first = scanner.nextDouble();
+        second = scanner.nextDouble();
+        third = scanner.nextDouble();
+        
+        if (first + second <= third || third + second <= first || first + third <= second) System.out.println("Invalid triangle");
+        
+        else System.out.println("Valid triangle");
+    }
+}
+```
